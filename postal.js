@@ -10,7 +10,7 @@ function mostrarSaludo() {
   body.addEventListener("click", ocultarSaludo);
   
   function ocultarSaludo() {
-      document.getElementById("felicidades").style.visibility="visible";
-      document.getElementById("nombre").style.visibility="visible";
+      document.getElementById("felicidades").style.visibility="hidden";
+      document.getElementById("nombre").style.visibility="hidden";
   
     }
