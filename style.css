@@ -62,6 +62,7 @@
     visibility: hidden;
 }
 
+ /* MOVIMIENTO PARPADEO DE LA ESTRELLA */
 
 @-moz-keyframes parpadeo{  
   0% { opacity: 1.0; }
@@ -81,6 +82,8 @@
   100% { opacity: 1.0; }
 }
 
+/* MOVIMIENTO DE LA 2 CAMPANA */
+
 @keyframes spin { 
   from { 
       transform: rotate(0deg); 
@@ -89,20 +92,7 @@
   }
 }
 
-#campana2 {
-  display: flex;
-  position: absolute;
-  height: 150px;
-  width: 150px;
-  margin-bottom: 90%;
-  margin-left: 40%;
-  display: flex;
-  position: absolute;
-  animation-name: rotate;
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-  
-}
+/* MOVIMIENTO DE LA PRIMERA CAMPAAN QUE ROTA */
 
 @keyframes rotate {
   0% {
