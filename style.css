@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  
+  .principal {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  audio{
+    display: none;
+  }
+  
+  img {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+  }
+  
+  #felicidades {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5vw;
+    display: flex;
+    position: absolute;
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin-bottom: 50vh;
+    color: white;
+    font-size: 3em;
+    font-style: italic;
+    text-shadow: 0px 2px black;
+    visibility: hidden;
+  }
+
+
+  
+  #nombre {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    position: absolute;
+    width: auto;
+    height: auto;
+    margin-bottom: 60vh;
+    text-align: center;
+    visibility: hidden;
+}
+
+
+@-moz-keyframes parpadeo{  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes parpadeo {  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+   100% { opacity: 1.0; }
+}
+
+@keyframes parpadeo {  
+  0% { opacity: 1.0; }
+   50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+
+#campana1 {
+  display: flex;
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  margin-bottom: 90%;
+  margin-right: 40%;
+  display: flex;
+  position: absolute;
+  animation-name: spin;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spin { 
+  from { 
+      transform: rotate(0deg); 
+  } to { 
+      transform: rotate(-180deg); 
+  }
+}
+
+#campana2 {
+  display: flex;
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  margin-bottom: 90%;
+  margin-left: 40%;
+  display: flex;
+  position: absolute;
+  animation-name: rotate;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+
+@keyframes dos {
+    from {
+        margin-left: 100%;
+        width: 100%;
+        color:red;
+    }
+    
+    50% {
+        font-size: 300%;
+        color:yellow;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+        color:blue;
+    }
+}
+
+  @media(orientation:landscape) {
+    .principal {
+      width: 40vw;
+    }
+  
+  
+  }
