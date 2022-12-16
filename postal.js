@@ -1,3 +1,4 @@
+const myTimeout = setTimeout(mostrarSaludo, 3000);
 function mostrarSaludo() {
     document.getElementById("felicidades").style.visibility="visible";
     document.getElementById("nombre").style.visibility="visible";
