@@ -81,21 +81,6 @@
   100% { opacity: 1.0; }
 }
 
-
-#campana1 {
-  display: flex;
-  position: absolute;
-  height: 150px;
-  width: 150px;
-  margin-bottom: 90%;
-  margin-right: 40%;
-  display: flex;
-  position: absolute;
-  animation-name: spin;
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-}
-
 @keyframes spin { 
   from { 
       transform: rotate(0deg); 
